@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Operação</title>
+        <meta charset="utf-8">
+
+        <script>
+
+           var n1 = prompt("Digite o Primeiro Numero:")
+           var op = prompt('Digite a operação desejada (soma ou subtração): ')
+           var n2 = prompt('Digite o Segundo Numero:')
+
+           n1 = parseFloat(n1)
+           n2 = parseFloat(n2)
+
+           function calc (n1, n2, op){
+               var r = 0
+
+                switch(op){
+                    case 'soma':
+                        r = n1+n2
+                    break;
+
+                    case 'subtração':
+                        r = n1-n2
+                    break;
+
+                    default:
+                    document.write('Operação Invalida')
+                }
+
+            return r
+           }
+
+           document.write('O resultado da Operação é de : ' +calc(n1, n2,op))
+
+        </script>
+
+    </head>
+
+    <body>
+    
+    </body>
+</html>
